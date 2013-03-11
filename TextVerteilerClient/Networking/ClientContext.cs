@@ -61,6 +61,7 @@ namespace TextVerteilerClient.Networking
         {
             try
             {
+                socket.Shutdown(SocketShutdown.Both);
                 socket.Close();
             }
             catch (Exception)
